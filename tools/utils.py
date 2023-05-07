@@ -47,9 +47,3 @@ def mobility_trends_by_category(data, category, plot_title):
     fig.suptitle('{title} mobility trends by state'.format(title=plot_title), fontsize=24, fontweight='bold')
     figname = category+'_mobility_trends_by_state.png' 
     plt.savefig('figures/'+figname)
-	
-
-def load_data(*path):
-	US_2020 = pd.read_csv('data/2020_US_Region_Mobility_Report.csv', low_memory=False)
-US_2021 = pd.read_csv('data/2021_US_Region_Mobility_Report.csv', low_memory=False)
-US_2022 = pd.read_csv('data/2022_US_Region_Mobility_Report.csv', low_memory=False)
