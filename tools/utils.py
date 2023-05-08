@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pandas as pd
 
 # define a function to visualize the mobility trends by date
 def mobility_trends_by_date(data, category, plot_title):
