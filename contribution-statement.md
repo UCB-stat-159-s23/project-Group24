@@ -8,10 +8,11 @@ June Lee:
 * Created `contribution-statement.md` file
 
 Haoyu Liu:
-* Analyzed the relationship of COVID cases and gathering bans.
+* Analyzed the relationship of COVID cases and gathering bans (`CasesAndPolicies.ipynb`).
 * Made envirnment
-* created Jupyter Book
-* added `READE.md` file
-* created binder link
+* Created Jupyter Book
+* Added `README.md` file
+* Created binder link
+* Contributed to `main.ipynb`
 
 
