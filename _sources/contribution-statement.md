@@ -12,6 +12,7 @@ June Lee:
 * Make `Makefile`
 * fixed `utils.py` file
 * Created `contribution-statement.md` file
+* Fixed binder link
 
 Haoyu Liu:
 * `Dependency Analysis` Section
