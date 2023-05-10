@@ -3,55 +3,18 @@ import seaborn as sns
 import pandas as pd
 pd.reset_option("mode.chained_assignment", None)
 
-# define a function to visualize the mobility trends by date
-def mobility_trends_by_date(data, category, plot_title):
-    fig, ax = plt.subplots(figsize=(12,4))
-    sns.lineplot(data=data, x='date', y=category, estimator='mean' , errorbar=None)
-    plt.axhline(y=0, linestyle='dashed', color='red')
-    plt.xticks([])
-    plt.xlim('2020-02-15', '2022-10-14')
-    plt.title('{title} percent change from baseline by date'.format(title=plot_title))
-    plt.ylabel('percent change from baseline')
-    figname = category+'_by_date.png'
-    plt.savefig('figures/'+figname);
-
-# define a function to visualize the mobility trends by year and month
-def mobility_trends_by_year_month(data, category, plot_title):
-    fig, ax = plt.subplots(figsize=(12,4))
-    sns.lineplot(data=data, x='year_month', y=category, estimator='mean' , errorbar=None)
-    plt.axhline(y=0, linestyle='dashed', color='red')
-    plt.xticks(rotation=90)
-    plt.xlim('2020-02', '2022-10')
-    plt.title('{title} percent change from baseline by year and month'.format(title=plot_title))
-    plt.ylabel('percent change from baseline')
-    figname = category+'_by_year_month.png'
-    plt.savefig('figures/'+figname);
-
-# define a function to visualize the mobility trends by category
-def mobility_trends_by_category(data, category, plot_title):
-    states = data['state'].dropna().unique()
-    state_index = 0
-    fig, ax = plt.subplots(nrows=11, ncols=5, figsize=(20,20))
-
-    for row in range(11):
-        for col in range(5):
-            try:
-                state_data = data[data['state'] == states[state_index]]
-                sns.lineplot(data=state_data, x='year_month',y=category, errorbar=None, ax=ax[row,col])
-                ax[row,col].axhline(y=0, linestyle='dashed', color='red')
-                ax[row,col].set_xticks([])
-                ax[row,col].set_xlabel('')
-                ax[row,col].set_ylabel('')
-                ax[row,col].set_title(states[state_index])
-                state_index = state_index + 1
-            except IndexError:
-                pass
-    fig.suptitle('{title} mobility trends by state'.format(title=plot_title), fontsize=24, fontweight='bold')
-    figname = category+'_mobility_trends_by_state.png' 
-    plt.savefig('figures/'+figname)
 
 # Capture critical time points in DQQ model
 def find_ts(df_for_t, state):
+    """
+    This function capture critical time points in the proposed DQQ model.
+    Mathematical details about the proposed model could be found here:
+    https://github.com/UCB-stat-159-s23/project-Group24/blob/main/Appendix%20A%20-%20DQQ.pdf
+
+    :param df_for_t: the structured dataframe for DQQ model
+    :param state: the critical time points and corresponding mobility metrics as the output of DQQ model
+    :return:
+    """
     t0_time_window = 100
     t3_time_window = 120  # First x days chunk to find t1
     t4_time_window = 60  # Time window to get std
@@ -126,3 +89,50 @@ def find_ts(df_for_t, state):
 
     }
     return T
+
+# define a function to visualize the mobility trends by date
+def mobility_trends_by_date(data, category, plot_title):
+    fig, ax = plt.subplots(figsize=(12,4))
+    sns.lineplot(data=data, x='date', y=category, estimator='mean' , errorbar=None)
+    plt.axhline(y=0, linestyle='dashed', color='red')
+    plt.xticks([])
+    plt.xlim('2020-02-15', '2022-10-14')
+    plt.title('{title} percent change from baseline by date'.format(title=plot_title))
+    plt.ylabel('percent change from baseline')
+    figname = category+'_by_date.png'
+    plt.savefig('figures/'+figname);
+
+# define a function to visualize the mobility trends by year and month
+def mobility_trends_by_year_month(data, category, plot_title):
+    fig, ax = plt.subplots(figsize=(12,4))
+    sns.lineplot(data=data, x='year_month', y=category, estimator='mean' , errorbar=None)
+    plt.axhline(y=0, linestyle='dashed', color='red')
+    plt.xticks(rotation=90)
+    plt.xlim('2020-02', '2022-10')
+    plt.title('{title} percent change from baseline by year and month'.format(title=plot_title))
+    plt.ylabel('percent change from baseline')
+    figname = category+'_by_year_month.png'
+    plt.savefig('figures/'+figname);
+
+# define a function to visualize the mobility trends by category
+def mobility_trends_by_category(data, category, plot_title):
+    states = data['state'].dropna().unique()
+    state_index = 0
+    fig, ax = plt.subplots(nrows=11, ncols=5, figsize=(20,20))
+
+    for row in range(11):
+        for col in range(5):
+            try:
+                state_data = data[data['state'] == states[state_index]]
+                sns.lineplot(data=state_data, x='year_month',y=category, errorbar=None, ax=ax[row,col])
+                ax[row,col].axhline(y=0, linestyle='dashed', color='red')
+                ax[row,col].set_xticks([])
+                ax[row,col].set_xlabel('')
+                ax[row,col].set_ylabel('')
+                ax[row,col].set_title(states[state_index])
+                state_index = state_index + 1
+            except IndexError:
+                pass
+    fig.suptitle('{title} mobility trends by state'.format(title=plot_title), fontsize=24, fontweight='bold')
+    figname = category+'_mobility_trends_by_state.png' 
+    plt.savefig('figures/'+figname)
