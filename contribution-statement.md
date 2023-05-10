@@ -2,14 +2,14 @@
 
 June Lee:
 
-* Analyzed 'residential' and 'workplaces' part
+* Analyzed `residential` and `workplaces` part
 * Make `Makefile`
 * fixed `utils.py` file
 * Created `contribution-statement.md` file
 
 Haoyu Liu:
 * Analyzed the relationship of COVID cases and gathering bans (`CasesAndPolicies.ipynb`).
-* Made envirnment
+* Made environment
 * Created Jupyter Book
 * Added `README.md` file
 * Created binder link
