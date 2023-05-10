@@ -1,4 +1,4 @@
-### Contribution statement
+## Contribution statement
 
 Lei Zhang:
 
@@ -25,6 +25,7 @@ Haoyu Liu:
 Han Wang:
 * `Introduction`, `Mechanic Analysis based on Demand Modeling`, `Conclusion` Sections
 * Determined the dataset and topic, and organized the structure of the project
-* Proposed the DQQ model for the quantitative analysis
-* 
-
+* Analyzed the state-of-the-art researches and composed the literature review
+* Proposed the [DQQ model](https://github.com/UCB-stat-159-s23/project-Group24/blob/main/Appendix%20A%20-%20DQQ.pdf) for the mechanism analysis
+* Publish the jupyter book and set up the continuous integration
+* Set up the LICENSE
