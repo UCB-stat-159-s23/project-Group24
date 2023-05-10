@@ -347,6 +347,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstract">Abstract</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions">Contributions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-structure">File structure</a></li>
 </ul>
             </nav>
@@ -363,15 +365,42 @@ document.write(`
 <h1>The Effect of COVID-19 on U.S. Mobility: An Analysis of Google Community Mobility Reports<a class="headerlink" href="#the-effect-of-covid-19-on-u-s-mobility-an-analysis-of-google-community-mobility-reports" title="Permalink to this heading">#</a></h1>
 <p>TODO: Add blinder link here
 Blinder: <span class="xref myst"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></span>
-TODO: Add Book link here
-Jupyter Book: <span class="xref myst">Link</span></p>
+Jupyter Book: <a class="reference external" href="https://ucb-stat-159-s23.github.io/project-Group24/main.html">Link</a></p>
 <section id="abstract">
 <h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this heading">#</a></h2>
 <p>This study investigates the impact of the COVID-19 pandemic on mobility patterns in the United States using Google Community Mobility Reports. The research employs descriptive statistics, time-series analysis, and regression models to analyze the data. In order to understand the mechanism of epidemic spread on the community mobility, we modelled the demand-service relationship using the DQQ model which analyze disruptions and recoveries in complex systems in different contexts. The model can help decision-makers and practitioners develop strategies to mitigate the impact of disruptions, improve the resilience of systems, and enhance the recovery process. Furthermore, the model can be used to evaluate the effectiveness of different policies and interventions aimed at minimizing disruptions and accelerating the recovery process. The analysis results indicate significant changes in mobility patterns during the pandemic, with notable variations across different regions and sectors. The findings have implications for policymakers and future research on the long-term consequences of the pandemic on human mobility.</p>
 </section>
+<section id="contributions">
+<h2>Contributions<a class="headerlink" href="#contributions" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Correlation Analysis</p></li>
+<li><p>Spatiotemporal Trends Analysis</p></li>
+<li><p>Policy and Cases Dependency Analysis</p></li>
+<li><p>Social Productivity-Related Mobility Trends</p></li>
+<li><p>Mechanism Analysis based on Demand Modeling by proposing the <a class="reference external" href="https://github.com/UCB-stat-159-s23/project-Group24/blob/main/Appendix%20A%20-%20DQQ.pdf">Double Quadratic Queue (DQQ)</a> Model.</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
+<p>This project includes the Makefile support, which can be easily installed by:
+<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">env</span></code></p>
+</section>
 <section id="file-structure">
 <h2>File structure<a class="headerlink" href="#file-structure" title="Permalink to this heading">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">data</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code> - Dataset of Google Community Mobility Reports</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">figures</span></code> - Figures generated from the analysis</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">figures/dqq_outputs</span></code> - Figures generated from the DQQ model</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">figures/illustrations</span></code> - Illustration figures for the narrative notebook</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output</span></code> - Output files from the DQQ analysis</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tools</span></code> - Tools used for the analysis</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">main.ipynb</span></code> - Narrative notebook</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">main.html</span></code>, <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, <code class="docutils literal notranslate"><span class="pre">logo.png</span></code> - Required files for the Jupyter Book auto build
+…and other files for the integrity and environment setup</p></li>
+</ul>
 </section>
 </section>
 
@@ -425,6 +454,8 @@ Jupyter Book: <span class="xref myst">Link</span></p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstract">Abstract</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions">Contributions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-structure">File structure</a></li>
 </ul>
   </nav></div>
@@ -439,6 +470,10 @@ Jupyter Book: <span class="xref myst">Link</span></p>
   
   <div class="footer-item">
     
+<p class="component-author">
+By Group 24 Members
+</p>
+
   </div>
   
   <div class="footer-item">

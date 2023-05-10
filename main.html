@@ -383,8 +383,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-productivity-related-mobility-trends">Social Productivity-Related Mobility Trends</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanic-analysis-based-on-demand-modeling">Mechanic Analysis based on Demand Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanism-analysis-based-on-demand-modeling">Mechanism Analysis based on Demand Modeling</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contribution-statement">Contribution statement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
@@ -1658,9 +1659,9 @@ Name: year_month, Length: 52923, dtype: object
 </div>
 </div>
 </section>
-<section id="mechanic-analysis-based-on-demand-modeling">
-<h2>Mechanic Analysis based on Demand Modeling<a class="headerlink" href="#mechanic-analysis-based-on-demand-modeling" title="Permalink to this heading">#</a></h2>
-<p>In order to understand the mechanism of epidemic spread effect on the community mobility change, we modelled the demand-service relationship using the Double Quadratic Queue (DQQ) model.</p>
+<section id="mechanism-analysis-based-on-demand-modeling">
+<h2>Mechanism Analysis based on Demand Modeling<a class="headerlink" href="#mechanism-analysis-based-on-demand-modeling" title="Permalink to this heading">#</a></h2>
+<p>In order to understand the mechanism of epidemic spread effect on the community mobility change, we modelled the demand-service relationship by proposing the Double Quadratic Queue (DQQ) model.</p>
 <p>By adopting the fluid queue derivation process, the model considers the two distinct stages and differentiates itself from a typical single-stage fluid queue model. The fluid queue modeling approach is a method used to analyze and model the behavior of queues in a dynamic setting, taking into account varying arrival and discharge rates. Newell’s approach combines Taylor expansion, calculus, and geometric representation to derive an algebraic expression for the queue length at any given time. The DQQ model incorporates both geometric representation and algebraic expression. This fluid queue process helps visualize the relationships between arrival and discharge rates, queue length, and the passage of time. The ultimate goal of the subsequent derivation process is to obtain an algebraic expression for the queue length or cumulative change, which can be employed to study the queue’s or system’s behavior analytically.</p>
 <p><img alt="" src="_images/dqq-curves.png" /></p>
 <p>The mathematical expression of the proposed DQQ model is provided in the <a class="reference external" href="https://github.com/UCB-stat-159-s23/project-Group24/blob/main/Appendix%20A%20-%20DQQ.pdf">Appendix A</a>. Typically, the following parameters are observable directly from time series datasets:
@@ -2015,18 +2016,53 @@ Name: year_month, Length: 52923, dtype: object
 <p>In order to understand the mechanism of epidemic spread on the community mobility, we modelled the demand-service relationship using the DQQ model which analyze disruptions and recoveries in complex systems in different contexts, such as the impact of natural disasters, pandemic outbreaks, and other major events. The model can help decision-makers and practitioners develop strategies to mitigate the impact of disruptions, improve the resilience of systems, and enhance the recovery process. Furthermore, the model can be used to evaluate the effectiveness of different policies and interventions aimed at minimizing disruptions and accelerating the recovery process.</p>
 <p>In conclusion, this study offers a comprehensive analysis of the effect of COVID-19 on U.S. mobility patterns using Google Community Mobility Reports data. The findings underscore the pandemic’s significant and multifaceted impact on various aspects of mobility, emphasizing the importance of tailored policy interventions and continued research to better understand and address the long-term consequences of the pandemic on human mobility.</p>
 </section>
+<section id="contribution-statement">
+<h2>Contribution statement<a class="headerlink" href="#contribution-statement" title="Permalink to this heading">#</a></h2>
+<p>Lei Zhang:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span></code> and <code class="docutils literal notranslate"><span class="pre">Spatiotemporal</span> <span class="pre">Trends</span> <span class="pre">Analysis</span></code> Section</p></li>
+<li><p>[… and placeholder for other contributions]</p></li>
+</ul>
+<p>June Lee:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Social</span> <span class="pre">Productivity-Related</span> <span class="pre">Mobility</span> <span class="pre">Trends</span></code> Section</p></li>
+<li><p>Analyzed <code class="docutils literal notranslate"><span class="pre">residential</span></code> and <code class="docutils literal notranslate"><span class="pre">workplaces</span></code> part</p></li>
+<li><p>Make <code class="docutils literal notranslate"><span class="pre">Makefile</span></code></p></li>
+<li><p>fixed <code class="docutils literal notranslate"><span class="pre">utils.py</span></code> file</p></li>
+<li><p>Created <code class="docutils literal notranslate"><span class="pre">contribution-statement.md</span></code> file</p></li>
+</ul>
+<p>Haoyu Liu:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Dependency</span> <span class="pre">Analysis</span></code> Section</p></li>
+<li><p>Analyzed the relationship of COVID cases and gathering bans (<code class="docutils literal notranslate"><span class="pre">CasesAndPolicies.ipynb</span></code>).</p></li>
+<li><p>Made environment</p></li>
+<li><p>Created Jupyter Book</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file</p></li>
+<li><p>Created binder link</p></li>
+<li><p>Contributed to <code class="docutils literal notranslate"><span class="pre">main.ipynb</span></code></p></li>
+</ul>
+<p>Han Wang:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Introduction</span></code>, <code class="docutils literal notranslate"><span class="pre">Mechanic</span> <span class="pre">Analysis</span> <span class="pre">based</span> <span class="pre">on</span> <span class="pre">Demand</span> <span class="pre">Modeling</span></code>, <code class="docutils literal notranslate"><span class="pre">Conclusion</span></code> Sections</p></li>
+<li><p>Determined the dataset and topic, and organized the structure of the project</p></li>
+<li><p>Analyzed the state-of-the-art researches and composed the literature review</p></li>
+<li><p>Proposed the <a class="reference external" href="https://github.com/UCB-stat-159-s23/project-Group24/blob/main/Appendix%20A%20-%20DQQ.pdf">DQQ model</a> for the mechanism analysis</p></li>
+<li><p>Publish the jupyter book and set up the continuous integration</p></li>
+<li><p>Set up the LICENSE</p></li>
+</ul>
+</section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
-<p>[1] Abraham C. Camba; Aileen L. Camba;  “The Effects of Restrictions in Economic Activity on The Spread of COVID-19 in The Philippines: Insights from Apple and Google Mobility Indicators”,   THE JOURNAL OF ASIAN FINANCE, ECONOMICS AND BUSINESS,  2020.
-[2] Eric Halford; Anthony Dixon; Graham Farrell; Nicolas Malleson; Nick Tilley;  “Crime and Coronavirus: Social Distancing, Lockdown, and The Mobility Elasticity of Crime”,   CRIME SCIENCE,  2020.  (IF: 3)
-[3] E Nurjani; K P Hafizha; D Purwanto; F Ulumia; M Widyastuti; A B Sekaranom; U Suarma;  “Carbon Emissions from The Transportation Sector During The Covid-19 Pandemic in The Special Region of Yogyakarta, Indonesia”,   IOP CONFERENCE SERIES: EARTH AND ENVIRONMENTAL SCIENCE,  2021.
-[4] Terje Trasberg; James Cheshire;  “Spatial and Social Disparities in The Decline of Activities During The COVID-19 Lockdown in Greater London”,   URBAN STUDIES,  2021.  (IF: 3)
-[5] Hafiz Suliman Munawar; Sara Imran Khan; Zakria Qadir; Abbas Z. Kouzani; M. A. Parvez Mahmud;  “Insight Into The Impact of COVID-19 on Australian Transportation Sector: An Economic and Community-Based Perspective”,   SUSTAINABILITY,  2021.  (IF: 3)
-[6] Yuqin Jiang; Xiao Huang; Zhenlong Li;  “Spatiotemporal Patterns of Human Mobility and Its Association with Land Use Types During COVID-19 in New York City”,   ISPRS INT. J. GEO INF.,  2021.  (IF: 3)
-[7] R Safitri; R Amelia;  “Forecasting Travel Patterns During COVID-19 Period Using Community Mobility Report Case Study: Bangka Belitung Province”,   IOP CONFERENCE SERIES: EARTH AND ENVIRONMENTAL SCIENCE,  2021.
-[8] Dina Lusiana Setyowati; Muhammad Khairul Nuryanto; Muhammad Sultan; Lisda Sofia; Suwardi Gunawan; Agus Wiranto;  “COMPUTER VISION SYNDROME AMONG ACADEMIC COMMUNITY IN MULAWARMAN UNIVERSITY, INDONESIA DURING WORK FROM HOME IN COVID-19 PANDEMIC”,   ANNALS OF TROPICAL MEDICINE AND PUBLIC HEALTH,  2021.
-[9] Aziman Abdullah;  “Lockdown Duration-based Impact Analysis Model of Residential Community Mobility Change and COVID-19 Cases in Malaysia”,   2021 INTERNATIONAL CONFERENCE ON INNOVATION AND …,  2021.
-[10] Finn Petersen; Anna Errore; Pinar Karaca-Mandic;  “Lifting Statewide Mask Mandates and COVID-19 Cases: A Synthetic Control Study”,   MEDICAL CARE,  2022.</p>
+<p>[1] Abraham C. Camba; Aileen L. Camba;  “The Effects of Restrictions in Economic Activity on The Spread of COVID-19 in The Philippines: Insights from Apple and Google Mobility Indicators”,   THE JOURNAL OF ASIAN FINANCE, ECONOMICS AND BUSINESS,  2020.</p>
+<p>[2] Eric Halford; Anthony Dixon; Graham Farrell; Nicolas Malleson; Nick Tilley;  “Crime and Coronavirus: Social Distancing, Lockdown, and The Mobility Elasticity of Crime”,   CRIME SCIENCE,  2020.  (IF: 3)</p>
+<p>[3] E Nurjani; K P Hafizha; D Purwanto; F Ulumia; M Widyastuti; A B Sekaranom; U Suarma;  “Carbon Emissions from The Transportation Sector During The Covid-19 Pandemic in The Special Region of Yogyakarta, Indonesia”,   IOP CONFERENCE SERIES: EARTH AND ENVIRONMENTAL SCIENCE,  2021.</p>
+<p>[4] Terje Trasberg; James Cheshire;  “Spatial and Social Disparities in The Decline of Activities During The COVID-19 Lockdown in Greater London”,   URBAN STUDIES,  2021.  (IF: 3)
+[5] Hafiz Suliman Munawar; Sara Imran Khan; Zakria Qadir; Abbas Z. Kouzani; M. A. Parvez Mahmud;  “Insight Into The Impact of COVID-19 on Australian Transportation Sector: An Economic and Community-Based Perspective”,   SUSTAINABILITY,  2021.  (IF: 3)</p>
+<p>[6] Yuqin Jiang; Xiao Huang; Zhenlong Li;  “Spatiotemporal Patterns of Human Mobility and Its Association with Land Use Types During COVID-19 in New York City”,   ISPRS INT. J. GEO INF.,  2021.  (IF: 3)</p>
+<p>[7] R Safitri; R Amelia;  “Forecasting Travel Patterns During COVID-19 Period Using Community Mobility Report Case Study: Bangka Belitung Province”,   IOP CONFERENCE SERIES: EARTH AND ENVIRONMENTAL SCIENCE,  2021.</p>
+<p>[8] Dina Lusiana Setyowati; Muhammad Khairul Nuryanto; Muhammad Sultan; Lisda Sofia; Suwardi Gunawan; Agus Wiranto;  “COMPUTER VISION SYNDROME AMONG ACADEMIC COMMUNITY IN MULAWARMAN UNIVERSITY, INDONESIA DURING WORK FROM HOME IN COVID-19 PANDEMIC”,   ANNALS OF TROPICAL MEDICINE AND PUBLIC HEALTH,  2021.</p>
+<p>[9] Aziman Abdullah;  “Lockdown Duration-based Impact Analysis Model of Residential Community Mobility Change and COVID-19 Cases in Malaysia”,   2021 INTERNATIONAL CONFERENCE ON INNOVATION AND …,  2021.</p>
+<p>[10] Finn Petersen; Anna Errore; Pinar Karaca-Mandic;  “Lifting Statewide Mask Mandates and COVID-19 Cases: A Synthetic Control Study”,   MEDICAL CARE,  2022.</p>
 </section>
 </section>
 
@@ -2114,8 +2150,9 @@ Name: year_month, Length: 52923, dtype: object
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-productivity-related-mobility-trends">Social Productivity-Related Mobility Trends</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanic-analysis-based-on-demand-modeling">Mechanic Analysis based on Demand Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanism-analysis-based-on-demand-modeling">Mechanism Analysis based on Demand Modeling</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contribution-statement">Contribution statement</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
@@ -2130,6 +2167,10 @@ Name: year_month, Length: 52923, dtype: object
   
   <div class="footer-item">
     
+<p class="component-author">
+By Group 24 Members
+</p>
+
   </div>
   
   <div class="footer-item">
