@@ -2,6 +2,4 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: contribution_statement
-chapters:
-- file: main
+root: main
