@@ -22,4 +22,9 @@ Haoyu Liu:
 * Created binder link
 * Contributed to `main.ipynb`
 
+Han Wang:
+* `Introduction`, `Mechanic Analysis based on Demand Modeling`, `Conclusion` Sections
+* Determined the dataset and topic, and organized the structure of the project
+* Proposed the DQQ model for the quantitative analysis
+* 
 
