@@ -419,9 +419,9 @@ document.write(`
 <p>We selected data from January 2020 to December 2022, representing the pre-pandemic and pandemic periods. The data was cleaned and preprocessed to address missing values and inconsistencies. We aggregated the data at the state level to facilitate regional analysis. The following sections provide the descriptive exploratory data analysis.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tools.utils</span> <span class="kn">import</span> <span class="n">mobility_trends_by_date</span>
-<span class="kn">from</span> <span class="nn">tools.utils</span> <span class="kn">import</span> <span class="n">mobility_trends_by_year_month</span>
-<span class="kn">from</span> <span class="nn">tools.utils</span> <span class="kn">import</span> <span class="n">mobility_trends_by_category</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gcmda.utils</span> <span class="kn">import</span> <span class="n">mobility_trends_by_date</span>
+<span class="kn">from</span> <span class="nn">gcmda.utils</span> <span class="kn">import</span> <span class="n">mobility_trends_by_year_month</span>
+<span class="kn">from</span> <span class="nn">gcmda.utils</span> <span class="kn">import</span> <span class="n">mobility_trends_by_category</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1685,7 +1685,7 @@ Name: year_month, Length: 52923, dtype: object
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tools.utils</span> <span class="kn">import</span> <span class="n">find_ts</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gcmda.utils</span> <span class="kn">import</span> <span class="n">find_ts</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">reset_option</span><span class="p">(</span><span class="s2">&quot;mode.chained_assignment&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">fig_path</span> <span class="o">=</span> <span class="s1">&#39;figures/dqq_outputs&#39;</span>
 <span class="n">out_put_path</span> <span class="o">=</span> <span class="s1">&#39;output&#39;</span>
