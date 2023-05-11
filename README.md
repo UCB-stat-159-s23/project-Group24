@@ -1,6 +1,5 @@
 # The Effect of COVID-19 on U.S. Mobility: An Analysis of Google Community Mobility Reports
-TODO: Add blinder link here
-Blinder: [![Binder](https://mybinder.org/badge_logo.svg)]()
+Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-s23/project-Group24.git/gh-pages)
 
 Jupyter Book: [Link](https://ucb-stat-159-s23.github.io/project-Group24/main.html)
 
