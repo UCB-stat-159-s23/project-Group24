@@ -30,6 +30,7 @@ This project includes the Makefile support, which can be easily installed by:
 * `gcmda` - Tools used for the analysis
 * `main.ipynb` - Narrative notebook
 * `main.html`, `_config.yml`, `_toc.yml`, `logo.png` - Required files for the Jupyter Book auto build
+
 ...and other files for the integrity and environment setup
 
 ## Reproducibility Efforts:
