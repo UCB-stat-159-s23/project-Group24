@@ -27,7 +27,7 @@ This project includes the Makefile support, which can be easily installed by:
   * `figures/dqq_outputs` - Figures generated from the DQQ model
   *  `figures/illustrations` - Illustration figures for the narrative notebook
 * `output` - Output files from the DQQ analysis
-* `tools` - Tools used for the analysis
+* `gcmda` - Tools used for the analysis
 * `main.ipynb` - Narrative notebook
 * `main.html`, `_config.yml`, `_toc.yml`, `logo.png` - Required files for the Jupyter Book auto build
 ...and other files for the integrity and environment setup
