@@ -2,8 +2,12 @@
 
 Lei Zhang:
 
-* `Data Source` and `Spatiotemporal Trends Analysis` Section
-* [... and placeholder for other contributions]
+* prepared / cleaned data for analysis
+* conducted mobility trends correlation analysis
+* conducted mobility trends by date analysis
+* conducted mobility trends by year_month analysis
+* conducted mobility trends by state analysis
+* created `utils.py` file
 
 June Lee:
 
