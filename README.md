@@ -14,6 +14,9 @@ This study investigates the impact of the COVID-19 pandemic on mobility patterns
 * Mechanism Analysis based on Demand Modeling by proposing the [Double Quadratic Queue (DQQ)](https://github.com/UCB-stat-159-s23/project-Group24/blob/main/Appendix%20A%20-%20DQQ.pdf) Model.
 
 ## Installation
+The customized package tool `gcmda` could be installed by `pip`:
+
+`pip install .`
 
 This project includes the Makefile support, which can be easily installed by:
 `make env`
@@ -28,3 +31,11 @@ This project includes the Makefile support, which can be easily installed by:
 * `main.ipynb` - Narrative notebook
 * `main.html`, `_config.yml`, `_toc.yml`, `logo.png` - Required files for the Jupyter Book auto build
 ...and other files for the integrity and environment setup
+
+## Reproducibility Efforts:
+
+* Blinder Deployment
+* Jupyter Book Deployment and Online Publishing
+* Pip Installation for `gcmda`
+* Pytest for `gcmda`
+* Makefile Support
